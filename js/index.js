@@ -3,8 +3,8 @@ import { db, getFirestore, addDoc, collection, getDocs, doc, updateDoc, deleteFi
 
 async function CrearNave() {
   try {
-    const docRef = await addDoc(collection(db, "users"), {
-      first: "Alan",
+    const docRef = await addDoc(collection(db, "Naves"), {
+      first: 'Ada',
       middle: "Mathison",
       last: "Turing",
       born: 1912
@@ -22,10 +22,28 @@ async function CrearNave() {
 
 //Funcion para obtener todos las naves
 export async function ListarNaves() {
-  const querySnapshot = await getDocs(collection(db, "users"));
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data()}`);
+  const querySnapshot = await getDocs(collection(db, "naves"));
+  querySnapshot.forEach((item) => {
+    console.log(`${item.id} => ${item.data().born}`);
+   
   })
 }
 
-ListarNaves();
+
+
+
+const taskForm = document.getElementById('task-form');
+
+taskForm.addEventListener('submit', e => {
+  e.preventDefault();
+
+  
+  
+  hola = document.getElementById('task-title.value');
+
+});
+
+
+
+
+
