@@ -25,7 +25,7 @@
 
   <div class="container conta-crear border mt-5">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="card">
           <div class="card-body">
             <h1 class="h4">Crear Nave</h1>
@@ -41,45 +41,55 @@
                 required
               />
 
-              <label for="title">Tipo de nave:</label>
+              <label for="title">Versión:</label>
               <input
                 type="text"
-                id="ctipo"
+                id="cversion"
                 class="form-control mb-3"
-                placeholder="Ingrese el Tipo"
+                placeholder="Ingrese el version"
                 autofocus
                 required
               />
 
-              <label for="title">Tipo de combustible:</label>
+              <label for="title">Primer lanzamiento:</label>
               <input
                 type="text"
-                id="ccombustible"
+                id="cplanzamiento"
                 class="form-control mb-3"
-                placeholder="Ingrese combustible"
+                placeholder="Ingrese primer lanzamiento"
                 autofocus
                 required
               />
 
-              <label for="title">Capacidad:</label>
+              <label for="title">Último lanzamiento:</label>
               <input
                 type="text"
-                id="ccapacidad"
+                id="cultilanzamiento"
                 class="form-control mb-3"
-                placeholder="Ingrese capacidad"
+                placeholder="Ingrese ultimo lanzamiento"
                 autofocus
                 required
               />
 
-              <label for="title">Pais:</label>
+              <label for="title">Constructor:</label>
               <input
                 type="text"
-                id="cpais"
+                id="cconstructor"
                 class="form-control mb-3"
-                placeholder="Capacidad pais"
+                placeholder="Ingrese contructor"
                 autofocus
                 required
               />
+              
+              <label for="title">Tipo:</label>
+              <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Seleccione el Tipo..</option>
+                  <option value="Lanzadera">Vehiculo lanzadera</option>
+                  <option value="no-tripulado">No tripuladas</option>
+                  <option value="Tripulado">Tripulada</option>
+                </select>
+              </div>
 
               <button class="btn btn-secondary" id="btn-crear-nave-form">Guardar</button>
             </form>
