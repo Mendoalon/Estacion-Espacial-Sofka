@@ -1,24 +1,6 @@
 import { db, getFirestore, addDoc, collection, getDocs, doc, updateDoc, deleteField } from '../database/firebase.js';
 
 
-async function CrearNave() {
-  try {
-    const docRef = await addDoc(collection(db, "Naves"), {
-      first: 'Ada',
-      middle: "Mathison",
-      last: "Turing",
-      born: 1912
-    });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (e) {
-    console.error("Error adding document: ", e);
-  }
-}
-
- //CrearNave()
-
-
-
 
 //Funcion para obtener todos las naves
 export async function ListarNaves() {
@@ -31,19 +13,22 @@ export async function ListarNaves() {
 
 
 
-
-const taskForm = document.getElementById('task-form');
-
-taskForm.addEventListener('submit', e => {
+//Funcion para crear las naves
+const formCrear = document.querySelector("#form-crear");
+formCrear.addEventListener("submit", async (e) => {
   e.preventDefault();
-
-  
-  
-  hola = document.getElementById('task-title.value');
-
+  const nombre = document.querySelector("#cnombre").value;
+  const tipo = document.querySelector("#ctipo").value;
+  const combustible = document.querySelector("#ccombustible").value;
+  const capacidad = document.querySelector("#ccapacidad").value;
+  const pais = document.querySelector("#cpais").value;
+  const docRef = await addDoc(collection(db, "naves"), {
+    nombre,
+    tipo,
+    combustible,
+    capacidad,
+    pais
+  });
+  console.log("Document written with ID: ", docRef.id);
+  formCrear.reset();
 });
-
-
-
-
-
