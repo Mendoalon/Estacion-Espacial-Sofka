@@ -51,12 +51,17 @@ La base de datos está conectada a la nube de Firebase.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 Instrucciones:
-Backend - Firebase
-Clonar el repositorio con el siguiente comando: git clone gh repo clone Mendoalon/Estacion-Espacial-Sofka
-abrir el proyecto con un editor de códigos.
-Se recomienda visual estudio code.
-Ubicarse el archivo index.html y ejecutarlo con el navegador.
-Se recomienda google chrome.
+
+1. Abrir el símbolo del sistema.
+2. Primera opción: Ingrese el siguiente comando: git clone https://github.com/Mendoalon/Estacion-Espacial-Sofka.git
+3. Segunda opción: ingrese al siguiente link: https://github.com/Mendoalon/Estacion-Espacial-Sofka 
+Ubique el boto que indica code y selecciónelo, se le desplegara un menú, selecciones el que dice: Download ZIP
+4. Cuando tenga descargado el archivo de nombre: Estacion-Espacial-Sofka. Favor abrir col el editor de códigos visual estudio code.
+5. Para ejecutar la aplicación se debe tener instalado el editor visual estudio code con la extensión live server.
+Si no la tiene, favor descargar e instalar, el siguiente link contiene la dirección de la extensión y editor: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer   =  https://code.visualstudio.com/download 
+6. Abrir con el editor el archivo index.html en la siguiente ruta: Estación-Espacial-Sofka\pages 
+7. Genere click izquierdo en el archivo index.html y se le mostrará una ventana emergente, seleccione abrir con live server.
+8. Automáticamente se le abrirá el navegador predeterminado.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
