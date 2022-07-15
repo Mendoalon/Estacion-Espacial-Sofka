@@ -1,5 +1,7 @@
 import { db, addDoc, collection, getDocs  } from '../database/firebase.js';
 
+
+//Funcion burcar nave.
 const cards2 = document.getElementById('card-teplate-dos');
 
 const formBuscar = document.querySelector("#form-buscar");
