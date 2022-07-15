@@ -63,6 +63,9 @@ Si no la tiene, favor descargar e instalar, el siguiente link contiene la direcc
 7. Genere click izquierdo en el archivo index.html y se le mostrará una ventana emergente, seleccione abrir con live server.
 8. Automáticamente se le abrirá el navegador predeterminado.
 
+Siguiendo este paso puede disfrutar de la aplicación.
+En el siguiente link puede observar la instrucción del funcionamiento de la aplicación: https://www.youtube.com/watch?v=FBlvGnMyGE8
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Autor  
